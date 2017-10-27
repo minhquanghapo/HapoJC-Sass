@@ -1,0 +1,74 @@
+@import 'variable';
+
+$color-blue: #00bcd4;
+$color-violet: #673ab7;
+$color-gold: #ffc107;
+$color-pink: #e91e63;
+$color-red: #f44336;
+$color-grey: #b1d136;
+$color-white: #fff;
+$color-transparent: rgba(0,0,0,0);
+
+.navbar-default{
+	background-color: $color-transparent;
+	border: 0;
+	.container-fluid
+	{
+		margin-top: 10px;
+	}
+}
+
+.navbar{
+	.navbar-brand
+	{
+		img
+		{
+			width: 143px;
+			position: relative;
+			top: 50%;
+			@include translate(0,-50%);
+		}
+	}
+	.navbar-nav
+	{
+		li{
+			margin-left: 15px;
+			a
+			{
+				color: $color-violet;
+				font-size: 14px;
+				span.icon-magnifier
+				{
+					font-size: 24px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	button#btn-login
+		{
+			background: $color-transparent;
+			border: $color-transparent;
+			span
+			{
+				color: $color-blue;
+				font-size: 14px;
+			}
+		}
+	button#btn-register
+		{
+			background: $color-blue;
+			border: $color-blue;
+			span
+			{
+				color: $color-white;
+				font-size: 14px;
+			}
+		}
+}
+
+.navbar-nav > li > a:hover
+{
+	text-decoration: none;
+	color: $color-red;
+}
