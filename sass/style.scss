@@ -32,7 +32,7 @@ $color-transparent: rgba(0,0,0,0);
 	.navbar-nav
 	{
 		li{
-			margin-left: 15px;
+			margin-left: 10px;
 			a
 			{
 				color: $color-violet;
@@ -52,7 +52,6 @@ $color-transparent: rgba(0,0,0,0);
 			span
 			{
 				color: $color-blue;
-				font-size: 14px;
 			}
 		}
 	button#btn-register
@@ -62,7 +61,6 @@ $color-transparent: rgba(0,0,0,0);
 			span
 			{
 				color: $color-white;
-				font-size: 14px;
 			}
 		}
 }
@@ -72,3 +70,104 @@ $color-transparent: rgba(0,0,0,0);
 	text-decoration: none;
 	color: $color-red;
 }
+
+/* div[class^="col"]{border: solid #333;}
+ */#home-page
+{
+	height: 100vh;
+	.left
+	{
+		padding-top: 6%;
+		.logo-content
+		{
+			padding-top: 70px;
+			span
+			{
+				line-height: 72px;
+				font-size: 64px;
+				font-weight: bold;
+				font-family: vnf-quicksand;
+				color: $color-blue;
+			}
+		}
+		.logo-small-content
+		{
+			padding-top:95px;
+			text-align: justify;
+			span
+			{
+				color: $color-violet;
+				line-height: 1.5;
+			}
+		}
+		.btn-intro
+		{
+			padding-top: 45px;
+			button#btn-intro-next
+			{
+				background: $color-transparent;
+				border: 2px solid $color-violet;
+				span
+				{
+					color: $color-violet;
+				}
+			}
+			button#btn-intro-register
+			{
+				background: $color-pink;
+				margin-left: 20px;
+				border: none;
+				span
+				{
+					color: $color-white;
+				}
+			}
+		}
+	}
+	.right
+	{
+		&.col-md-12
+		{
+			padding: 0;
+		}
+		.slide
+		{
+			height: 100vh;
+			background-image: url('../fonts/slide-section1.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			.btn-prev
+			{
+				border: 2px solid $color-blue;
+				position: relative;
+				left: 25px;
+				top: 50%;
+				background: $color-transparent;
+				@include translate(0,-50%);
+				span
+				{
+					color: $color-blue;
+					&.ti-arrow-left
+					{
+						margin-left: 0;
+						margin-right: 10px;
+					}
+				}	
+			}
+		}
+			.btn-next
+			{
+				border: none;
+				position: relative;
+				left: 78% ;
+				top: 50%;
+				background: $color-pink;
+				@include translate(0,-50%);
+				span
+				{
+					color: $color-white;
+				}	
+			}
+	}
+}
+
