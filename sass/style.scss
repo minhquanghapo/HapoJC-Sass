@@ -8,6 +8,7 @@ $color-red: #f44336;
 $color-grey: #b1d136;
 $color-white: #fff;
 $color-transparent: rgba(0,0,0,0);
+$color-black: #000000;
 
 .navbar-default{
 	background-color: $color-transparent;
@@ -71,10 +72,11 @@ $color-transparent: rgba(0,0,0,0);
 	color: $color-red;
 }
 
-/* div[class^="col"]{border: solid #333;}
- */#home-page
+/* div[class^="col"]{border: solid #333;}  */
+#home-page
 {
 	height: 100vh;
+	position: relative;
 	.left
 	{
 		padding-top: 6%;
@@ -159,7 +161,7 @@ $color-transparent: rgba(0,0,0,0);
 			{
 				border: none;
 				position: relative;
-				left: 78% ;
+				left: 79% ;
 				top: 50%;
 				background: $color-pink;
 				@include translate(0,-50%);
@@ -169,5 +171,199 @@ $color-transparent: rgba(0,0,0,0);
 				}	
 			}
 	}
+	#btn-support
+	{
+		background: $color-gold;
+		border: none;
+		position: absolute;
+		position: fixed;
+		bottom: 65px;
+		right: 14px;
+		letter-spacing: 0.2px;
+		span{
+			color: white;
+		}
+	}
 }
 
+#course
+{
+	height: 100vh;
+	.course-content
+	{
+		padding: 10% 0 0 0;
+		.course-logo
+		{
+			height: 300px;
+		}
+		.course-header
+		{
+			text-align: center;
+			padding-top: 30px;
+			span
+			{
+				font-size: 36px;
+				font-family: vnf-quicksand;
+				&.n5
+				{
+					color: $color-blue;
+				}
+				&.n4
+				{
+
+					color: $color-violet;
+				}	
+				&.n3
+				{
+					margin: 0 -20px 0 -10px;
+					color: $color-pink;
+				}							
+			}
+		}
+		.course-more-content
+		{	
+			height: 160px;
+			text-align: justify;
+			padding: 20px 0 0 0;
+			line-height: 1.5;
+			transform: scale(1.1);
+			span
+			{
+				color: $color-black;
+			}
+		}
+
+		.btn-course-register
+		{
+			padding-top: 30px;
+			text-align: center;
+			.n5
+			{
+				background: $color-blue;
+			}
+			.n4
+			{
+				background: $color-violet;
+			}
+			.n3
+			{
+				background: $color-pink;
+			}
+			.n5,.n4,.n3{border: none;}
+			.n5>span, .n4>span, .n3>span{
+					color: $color-white;
+					&.ti-angle-double-right
+					{
+						margin-left: -8px;
+					}
+				}
+		}
+	}
+}
+
+#bookself
+{
+	height: 100vh;
+	.bookself-header
+	{
+		padding-top: 40%;
+		ul{
+			line-height: 70px;
+			list-style: none;
+			li
+			{
+				span
+				{
+					font-size: 30px;
+					color: $color-gold;
+					span
+					{
+						margin-left: 30px;
+						font-size: 25px;
+						color: $color-violet;
+						font-family: vnf-quicksand;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	.btn-bookself-register{
+		padding: 30px 0 0 55px;
+		button
+		{
+			background: $color-blue;
+			border: none;
+			span{
+				color: $color-white;
+			}
+		}
+	}
+	.bookself-right
+	{
+		padding-top:22%;
+		position: relative;
+		.img-center
+		{
+			z-index: 10;
+			height: 564px;
+			background-image: url('../images/875c27f88aa8506dc976795e7db06910cfd2ccd0.jpg');		
+			@extend .img-border-radius;
+		}
+		.img-top
+			{
+				z-index: 20;
+				height: 300px;
+				position: absolute;
+				@include fixed-position(11%,0,0,0);
+				background-image: url('../images/e3c05783d7718cde5781783c4aea6837285589d5.jpg');
+				@extend .img-border-radius;
+			}
+		.img-bot
+			{
+				z-index: 20;
+				height: 220px;
+				position:absolute;
+				@include  fixed-position(84%,0,0,0);
+				background-image:url('../images/mac-glasses.jpg');
+				@extend .img-border-radius ;
+			}
+	}
+}
+#student
+{
+	height: 100vh;
+		.student-box
+		{
+			transform: scale(1.1);
+			margin-top:14%;
+			.student-sub-box
+			{
+				float: left;
+				margin-left: 31px;
+				width: 280px;
+				.student-circle
+				{
+					width: 200px;
+					height: 200px;
+					border-radius: 50%;
+					background-image:url('../images/girl.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					position: relative;
+					left: 50%;
+					@include translate(-50%,0);
+				}
+				.student-header
+				{
+					text-align: center;
+					margin-top: 70px;
+					span{
+						font-family: vnf-quicksand;
+						font-size: 24px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+}
