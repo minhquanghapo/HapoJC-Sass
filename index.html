@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="fonts/themify-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 	<link rel="stylesheet" href="/home/minhquang/my_git/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="/home/minhquang/my_git/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -39,7 +41,7 @@
 	<div class="container-fluid">
 		<section id="home-page">
 			<div class="row">
-				<div class="left col-lg-6 col-md-12">
+				<div class="left col-md-6 ">
 					<div class="col-md-10 col-md-offset-2">
 						<div class="row">
 							<div class="col-md-6">
@@ -48,7 +50,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-10 logo-content">
+							<div class="col-md-12 col-sm-12 logo-content">
 								<span>Summer is often synonymous with
 								beachs, ballparks 
 								and barbecues</span>
@@ -61,7 +63,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-7 btn-intro">
+							<div class="col-md-12 btn-intro">
 								<button id="btn-intro-next" class= "navbar-btn">
 									<span>xem tiếp </span><span class="ti-arrow-right"></span>
 								</button>
@@ -73,11 +75,43 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 right">
-					<div class="slide">
+				<div class="col-md-6 right">
+					<!-- <div class="slide">
 						<button class="btn-prev button-small"><span class="ti-arrow-left"></span><span>PREV</span></button>
 						<button class="btn-next button-small"><span>NEXT</span><span class="ti-arrow-right"></span></button>
-					</div>
+					</div> -->
+				  <div id="myCarousel" class="carousel slide slide-hapo" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				      <li data-target="#myCarousel" data-slide-to="1"></li>
+				      <li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img src="fonts/slide-section1.jpg" alt="Hapo Class" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img src="fonts/slide-section1.jpg" alt="Chicago" style="width:100%;">
+				      </div>
+				    
+				      <div class="item">
+				        <img src="fonts/slide-section1.jpg" alt="New york" style="width:100%;">
+				      </div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				     <a class="btn-prev button-small" href="#myCarousel" data-slide="prev" role="button">
+				     <span class="ti-arrow-left"></span><span>PREV</span>
+			    		</a>
+			    		<a class="btn-next button-small" href="#myCarousel" role="button">
+			     		<span>NEXT</span><span class="ti-arrow-right"></span>
+			    		</a>
+				  </div>
+		<!-- check corousel -->
 				</div>
 			</div>
 			<button id="btn-support"><span>HÔ TRƠ</span><span class="ti-help-alt"></span></button>
@@ -87,7 +121,7 @@
 	<div class="container-fluid">
 		<section id="course">
 			<div class="row">
-				<div class="col-lg-2 col-lg-offset-1 course-content">
+				<div class="col-md-2 col-md-offset-1 course-content">
 					<div class="row">
 						<div class="col-md-12 course-logo" >
 						<img src="fonts/N5.png" alt="N5">
@@ -112,7 +146,7 @@
 							</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-lg-offset-2 course-content">
+				<div class="col-md-2 col-md-offset-2 course-content">
 					<div class="row">
 						<div class="col-md-12 course-logo">
 						<img src="fonts/N4.png" alt="N4">
@@ -137,7 +171,7 @@
 							</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-lg-offset-2 course-content">
+				<div class="col-md-2 col-md-offset-2 course-content">
 					<div class="row">
 						<div class="col-md-12 course-logo">
 						<img src="fonts/N3.png" alt="N3">
@@ -168,7 +202,7 @@
 	<div class="container-fluid">
 		<section id="bookself">
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-1">
+				<div class="col-md-4 col-md-offset-1">
 					<div class="row">
 						<div class="col-md-12 bookself-header">
 							<ul>
@@ -187,7 +221,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-md-6">
 					<div class="row">
 						<div class="col-md-12 bookself-right">
 							<div class="col-md-10 col-md-offset-1 img-center">
@@ -202,11 +236,11 @@
 			</div>
 		</section>
 	</div>
-	
+
 	<div class="container-fluid">
 		<section id="student">
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-1 student-box">
+				<div class="col-md-10 col-md-offset-1 student-box">
 					<div class="student-sub-box">
 						<div class="student-circle"></div>
 						<div class="student-header">
@@ -237,9 +271,15 @@
 							<span>Đi học</span>
 						</div>
 					</div>
+				</div>
 			</div>
 		</section>
 	</div>
-
+	<div class="container-fluid">
+		<section id="teacher">
+			<div class="row">
+			</div>
+		</section>
+	</div>
 </body>
 </html>
