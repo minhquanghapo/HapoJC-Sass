@@ -1,46 +1,39 @@
-@font-face
-{
+@font-face {
 	font-family: 'themify';
 	src: url('../fonts/themify.ttf');
 }
 
-@font-face
-{
+@font-face {
 	font-family: "lato-regular";
 	src: url('../fonts/Lato-Regular.ttf');
 }
 	
-@font-face
-{
+@font-face {
 	font-family: "vnf-quicksand";
 	src: url('../fonts/vnf-quicksand-bold.ttf');
 }
 
-body{
-	width: 1900px;
+body {
 	margin:0;
 	padding:0;
 	font-size: 16px;
 	font-family: lato-regular;
 }
 
-@mixin fill-width($width)
-{
+@mixin fill-width($width) {
 	width: $width;
 	height: 19px;
 	border-radius: 20px;
 }
 
-@mixin fixed-position($top, $right, $bottom, $left)
-{
+@mixin fixed-position($top, $right, $bottom, $left) {
 	top: $top;
 	bottom: $bottom;
 	left: $left;
 	right: $right;
 }
 
-@mixin translate($x,$y)
-{
+@mixin translate($x,$y) {
 	-moz-transform: translate($x, $y);
 	-o-transform: translate($x, $y);
 	-ms-transform: translate($x, $y);
@@ -48,20 +41,17 @@ body{
      	transform: translate($x, $y);
 }
 
-button
-{
+button {
 	border-radius: 100px;
 	padding: 10px 19px;
 	text-align: center;
 	cursor: pointer;
-	span
-	{
+	span	{
 		font-size: 14px;
 	}
 }
 
-button:focus
-{
+button:focus {
 	outline: none;
 }
 
@@ -71,31 +61,43 @@ button:focus
  	padding: 7px 13px;
 }
 
-a:hover
-{
+a:hover {
 	text-decoration: none;
 }
 
-section
-{
+section {
 	width: 100%;
-	height: 1080px;
 	box-sizing: border-box;
 }
 
-img 
-{
+img {
 	max-width:100%;
 }
 
-span[class^="ti-"]
-{
+span[class^="ti-"] {
 	margin-left: 10px;
 	font-size: 14px;
 }
 
-span.ti-angle-double-right
-{
+span.ti-angle-double-right {
 	margin-left: -4px;
 }
 
+.img-border-radius {
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+}
+
+.carousel-control	
+{
+	text-shadow: none;
+	opacity: none;
+	background-color: none;
+	max-width: 40px;
+}
+
+a
+{
+	text-decoration: none;
+}

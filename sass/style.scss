@@ -8,8 +8,9 @@ $color-red: #f44336;
 $color-grey: #b1d136;
 $color-white: #fff;
 $color-transparent: rgba(0,0,0,0);
+$color-black: #000000;
 
-.navbar-default{
+.navbar-default {
 	background-color: $color-transparent;
 	border: 0;
 	.container-fluid
@@ -18,71 +19,61 @@ $color-transparent: rgba(0,0,0,0);
 	}
 }
 
-.navbar{
-	.navbar-brand
-	{
-		img
-		{
-			width: 143px;
+.navbar {
+	.navbar-brand {
+		img {
+			max-width: 143px;
 			position: relative;
 			top: 50%;
 			@include translate(0,-50%);
 		}
 	}
-	.navbar-nav
-	{
-		li{
+	.navbar-nav {
+		li {
 			margin-left: 10px;
-			a
-			{
+			a {
 				color: $color-violet;
 				font-size: 14px;
-				span.icon-magnifier
-				{
+				span.icon-magnifier {
 					font-size: 24px;
 					font-weight: bold;
 				}
 			}
 		}
 	}
-	button#btn-login
-		{
+	button#btn-login {
 			background: $color-transparent;
 			border: $color-transparent;
-			span
-			{
+			span	{
 				color: $color-blue;
 			}
 		}
-	button#btn-register
-		{
+	button#btn-register {
 			background: $color-blue;
 			border: $color-blue;
-			span
-			{
+			span	{
 				color: $color-white;
 			}
 		}
 }
 
-.navbar-nav > li > a:hover
-{
+.navbar-nav > li > a:hover {
 	text-decoration: none;
 	color: $color-red;
 }
 
-/* div[class^="col"]{border: solid #333;}
- */#home-page
-{
+/* div[class^="col"]{border: solid #333;}  
+ */#home-page {
 	height: 100vh;
-	.left
-	{
+	position: relative;
+	.col-md-6 {
+		padding:0;
+	}
+	.left {
 		padding-top: 6%;
-		.logo-content
-		{
+		.logo-content {
 			padding-top: 70px;
-			span
-			{
+			span	{
 				line-height: 72px;
 				font-size: 64px;
 				font-weight: bold;
@@ -90,84 +81,268 @@ $color-transparent: rgba(0,0,0,0);
 				color: $color-blue;
 			}
 		}
-		.logo-small-content
-		{
+		.logo-small-content {
 			padding-top:95px;
 			text-align: justify;
-			span
-			{
+			span	{
 				color: $color-violet;
 				line-height: 1.5;
 			}
 		}
-		.btn-intro
-		{
+		.btn-intro {
 			padding-top: 45px;
-			button#btn-intro-next
-			{
+			button#btn-intro-next	{
 				background: $color-transparent;
 				border: 2px solid $color-violet;
-				span
-				{
+				span	{
 					color: $color-violet;
 				}
 			}
-			button#btn-intro-register
-			{
+			button#btn-intro-register {
 				background: $color-pink;
 				margin-left: 20px;
 				border: none;
-				span
-				{
+				span	{
 					color: $color-white;
 				}
 			}
 		}
 	}
-	.right
-	{
-		&.col-md-12
-		{
-			padding: 0;
-		}
-		.slide
-		{
+	.right	{
+		.slide-hapo {
 			height: 100vh;
-			background-image: url('../fonts/slide-section1.jpg');
+			/* background-image: url('../fonts/slide-section1.jpg');
 			background-size: cover;
-			background-repeat: no-repeat;
-			.btn-prev
-			{
+			background-repeat: no-repeat; */
+			position: relative;
+			.carousel-inner > .item.next,
+ 			.carousel-inner > .item.active.right {
+			left: 0;
+			transform: none;
+			}
+			.carousel-inner > .item.prev,
+			.carousel-inner > .item.active.left {
+			left: 0;
+		 	transform: none;
+			}
+			.btn-prev {
+				position: absolute;
 				border: 2px solid $color-blue;
-				position: relative;
 				left: 25px;
 				top: 50%;
 				background: $color-transparent;
 				@include translate(0,-50%);
-				span
-				{
+				span	{
 					color: $color-blue;
-					&.ti-arrow-left
-					{
+					&.ti-arrow-left {
 						margin-left: 0;
 						margin-right: 10px;
 					}
 				}	
 			}
-		}
-			.btn-next
-			{
+			.btn-next {
+				position: absolute;
 				border: none;
-				position: relative;
-				left: 78% ;
+				right: 15px;
 				top: 50%;
 				background: $color-pink;
 				@include translate(0,-50%);
-				span
-				{
+				span	{
 					color: $color-white;
 				}	
 			}
+			.carousel-indicators
+			{
+				position: absolute;
+				bottom: 70px;
+				left: 95px;
+				width: auto;
+				margin-left: 0;
+				li {
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					border: 2px solid;
+				}
+
+				li:nth-child(1) {
+					border-color: $color-blue;
+				}
+				li:nth-child(2) {
+					border-color: $color-grey;
+				}
+				li:nth-child(2) {
+					border-color: $color-gold;
+				}
+
+			}	
+		}
+	}
+	#btn-support {
+		background: $color-gold;
+		border: none;
+		position: absolute;
+		position: fixed;
+		bottom: 65px;
+		right: 14px;
+		letter-spacing: 0.2px;
+		span {
+			color: white;
+		}
 	}
 }
 
+#course {
+	height: 100vh;
+	.course-content {
+		padding: 10% 0 0 0;
+		.course-logo {
+			height: 300px;
+		}
+		.course-header {
+			text-align: center;
+			padding-top: 30px;
+			span	{
+				font-size: 36px;
+				font-family: vnf-quicksand;
+				&.n5	{
+					color: $color-blue;
+				}
+				&.n4	{
+
+					color: $color-violet;
+				}	
+				&.n3	{
+					margin: 0 -20px 0 -10px;
+					color: $color-pink;
+				}							
+			}
+		}
+		.course-more-content	{	
+			height: 160px;
+			text-align: justify;
+			padding: 20px 0 0 0;
+			line-height: 1.5;
+			transform: scale(1.1);
+			span	{
+				color: $color-black;
+			}
+		}
+
+		.btn-course-register {
+			padding-top: 30px;
+			text-align: center;
+			.n5 {
+				background: $color-blue;
+			}
+			.n4 {
+				background: $color-violet;
+			}
+			.n3 {
+				background: $color-pink;
+			}
+			.n5,.n4,.n3 {
+				border: none;
+			}
+			.n5>span, .n4>span, .n3>span {
+					color: $color-white;
+					&.ti-angle-double-right {
+						margin-left: -8px;
+						}
+					}
+				}
+		}
+}
+
+#bookself {
+	height: 100vh;
+	.bookself-header	{
+		margin-left: -10%;
+		padding-top: 40%;
+		ul {
+			line-height: 70px;
+			list-style: none;
+			li {
+				span	{
+					font-size: 30px;
+					color: $color-gold;
+					span	{
+						margin-left: 30px;
+						font-size: 25px;
+						color: $color-violet;
+						font-family: vnf-quicksand;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	.btn-bookself-register {
+		padding: 30px 0 0 0px;
+		button {
+			background: $color-blue;
+			border: none;
+			span {
+				color: $color-white;
+			}
+		}
+	}
+	.bookself-right {
+		padding-top:22%;
+		position: relative;
+		.img-center {
+			z-index: 10;
+			height: 564px;
+			background-image: url('../images/875c27f88aa8506dc976795e7db06910cfd2ccd0.jpg');		
+			@extend .img-border-radius;
+		}
+		.img-top {
+				z-index: 20;
+				height: 300px;
+				position: absolute;
+				@include fixed-position(11%,0,0,0);
+				background-image: url('../images/e3c05783d7718cde5781783c4aea6837285589d5.jpg');
+				@extend .img-border-radius;
+			}
+		.img-bot {
+				z-index: 20;
+				height: 220px;
+				position:absolute;
+				@include  fixed-position(84%,0,0,0);
+				background-image:url('../images/mac-glasses.jpg');
+				@extend .img-border-radius ;
+			}
+	}
+}
+#student {
+	height: 100vh;
+		.student-box {
+			transform: scale(1.1);
+			margin-top:14%;
+			.student-sub-box {
+				float: left;
+				margin-left: 31px;
+				width: 280px;
+				.student-circle {
+					width: 200px;
+					height: 200px;
+					border-radius: 50%;
+					background-image:url('../images/girl.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					position: relative;
+					left: 50%;
+					@include translate(-50%,0);
+				}
+				.student-header	{
+					text-align: center;
+					margin-top: 70px;
+					span {
+						font-family: vnf-quicksand;
+						font-size: 24px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+}
