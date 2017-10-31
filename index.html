@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="http://www.nhk.or.jp/apple-touch-icon-152x152-precomposed.png" />
-	<title>Intern_Frontend</title>
 
+	<title>Intern_Frontend</title>
 	<link rel="stylesheet" href="fonts/themify-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 	<link rel="stylesheet" href="/home/minhquang/my_git/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="/home/minhquang/my_git/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  	<script src="/home/minhquang/my_git/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -27,13 +27,13 @@
 	      		<li><a href="#course">Khóa học</a></li>
 	      		<li><a href="#bookself">Tủ sách</a></li>
 	      		<li><a href="#student">Học viên</a></li>
-	      		<li><a href="#teacher">Giảng viên</a></li>
-	      		<li><a href="#blog">Blog</a></li>
+	      		<li><a href="#">Giảng viên</a></li>
+	      		<li><a href="#">Blog</a></li>
 	      		<li><a href="#">Liên hệ</a></li>
 	    		</ul>
 	    		<ul class="nav navbar-nav navbar-right">
-	      		<li><button  id="btn-login" type="button" class="navbar-btn">ĐĂNG NHẬP</button></li>
-	      		<li><button  id="btn-register" type="button" class="navbar-btn">ĐĂNG KÝ<span class="ti-arrow-right"></span></button></li>
+	      		<li><button  id="btn-login" type="button" class="navbar-btn"><span>ĐĂNG NHẬP</span></button></li>
+	      		<li><button  id="btn-register" type="button" class="navbar-btn"><span> ĐĂNG KÝ</span><span class="ti-arrow-right"></span></button></li>
 	      		<li><a href="#"><span class="icon-magnifier"></span></a></li>
 	   		</ul>
    		</div>
@@ -65,10 +65,10 @@
 						<div class="row">
 							<div class="col-md-12 btn-intro">
 								<button id="btn-intro-next" class= "navbar-btn">
-									xem tiếp<span class="ti-arrow-right"></span>
+									<span>xem tiếp </span><span class="ti-arrow-right"></span>
 								</button>
 								<button id="btn-intro-register" class= "navbar-btn">
-									đăng ký học thử<span class="ti-arrow-right"></span><span class="ti-angle-double-right"></span>
+									<span>đăng ký học thử </span><span class="ti-arrow-right"></span><span class="ti-angle-double-right"></span>
 								</button>
 								
 							</div>
@@ -76,41 +76,45 @@
 					</div>
 				</div>
 				<div class="col-md-6 right">
-					<div id="myCarousel" class="carousel slide slide-hapo" data-ride="carousel">
-					    <!-- Indicators -->
-					   	<ol class="carousel-indicators">
-					      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					      	<li data-target="#myCarousel" data-slide-to="1"></li>
-					      	<li data-target="#myCarousel" data-slide-to="2"></li>
-					    </ol>
+					<!-- <div class="slide">
+						<button class="btn-prev button-small"><span class="ti-arrow-left"></span><span>PREV</span></button>
+						<button class="btn-next button-small"><span>NEXT</span><span class="ti-arrow-right"></span></button>
+					</div> -->
+				  <div id="myCarousel" class="carousel slide slide-hapo" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				      <li data-target="#myCarousel" data-slide-to="1"></li>
+				      <li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>
 
 				    <!-- Wrapper for slides -->
-				    	<div class="carousel-inner">
-				     		<div class="item active">
-				        		<img src="fonts/slide-section1.jpg" alt="Hapo Class" >
-				      	</div>
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img src="fonts/slide-section1.jpg" alt="Hapo Class" style="width:100%;">
+				      </div>
 
-				      	<div class="item">
-				        		<img src="fonts/teacher.jpg" alt="Chicago" >
-				      	</div>
+				      <div class="item">
+				        <img src="fonts/slide-section1.jpg" alt="Chicago" style="width:100%;">
+				      </div>
 				    
-				      	<div class="item">
-				        		<img src="images/slide-3.png" alt="New york">
-				      	</div>
+				      <div class="item">
+				        <img src="fonts/slide-section1.jpg" alt="New york" style="width:100%;">
+				      </div>
 				    </div>
 
 				    <!-- Left and right controls -->
 				     <a class="btn-prev button-small" href="#myCarousel" data-slide="prev" role="button">
-				     		<span class="ti-arrow-left"></span>PREV
+				     <span class="ti-arrow-left"></span><span>PREV</span>
 			    		</a>
-			    		<a class="btn-next button-small" href="#myCarousel" role="button" data-slide="">
-			     		NEXT<span class="ti-arrow-right"></span>
+			    		<a class="btn-next button-small" href="#myCarousel" role="button">
+			     		<span>NEXT</span><span class="ti-arrow-right"></span>
 			    		</a>
-				</div>
+				  </div>
 		<!-- check corousel -->
 				</div>
 			</div>
-			<button id="btn-support">HÔ TRƠ<span class="ti-help-alt"></span></button>
+			<button id="btn-support"><span>HÔ TRƠ</span><span class="ti-help-alt"></span></button>
 		</section>
 	</div>
 
@@ -136,7 +140,7 @@
 					<div class="row">
 							<div class="col-md-12 btn-course-register">
 								<button class="n5">
-									 đăng kí học thử<span class="ti-arrow-right"></span>
+									<span> đăng kí học thử</span><span class="ti-arrow-right"></span>
 									<span class="ti-angle-double-right"></span>
 								</button>	
 							</div>
@@ -161,7 +165,7 @@
 					<div class="row">
 							<div class="col-md-12 btn-course-register">
 								<button class="n4">
-									đăng kí học thử<span class="ti-arrow-right"></span>
+									<span> đăng kí học thử</span><span class="ti-arrow-right"></span>
 									<span class="ti-angle-double-right"></span>
 								</button>	
 							</div>
@@ -186,7 +190,7 @@
 					<div class="row">
 							<div class="col-md-12 btn-course-register">
 								<button class="n3">
-									đăng kí học thử<span class="ti-arrow-right"></span>
+									<span> đăng kí học thử</span><span class="ti-arrow-right"></span>
 									<span class="ti-angle-double-right"></span>
 								</button>	
 							</div>
@@ -212,7 +216,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-5 btn-bookself-register">
-							<button>đăng ký học thử<span class="ti-arrow-right"></span>
+							<button><span>đăng ký học thử</span><span class="ti-arrow-right"></span>
 									<span class="ti-angle-double-right"></span></button>
 						</div>
 					</div>
@@ -271,162 +275,13 @@
 			</div>
 		</section>
 	</div>
-
-
 	<div class="container-fluid">
 		<section id="teacher">
 			<div class="row">
-				<div class="col-md-12">
-					<div id="teacher-slider" class="carousel slide slide-hapo" data-ride="carousel">
-					    <!-- Indicators -->
-					   	<ol class="carousel-indicators">
-					      	<li data-target="#teacher-slider" data-slide-to="0" class="active"></li>
-					      	<li data-target="#teacher-slider" data-slide-to="1"></li>
-					      	<li data-target="#teacher-slider" data-slide-to="2"></li>
-					    </ol>
-
-				    <!-- Wrapper for slides -->
-				    	<div class="carousel-inner">
-				     		<div class="item active row">
-				     			<div class="col-md-6">
-				        		<img src="fonts/teacher.jpg" alt="Hapo Class" >
-				        		</div>
-				        				<div class="col-md-4 col-md-offset-1">
-				        					<div class="row">
-				        						<div class="col-md-12 teacher-header">
-				        							<span>Giảng viên<span> Nguyễn Thị Mai Linh</span></span>
-				        						</div>
-				        						<div class="col-md-12 teacher-content">
-				        							<span>Unless you have the dubious pleasure of living right next door to an airport one of the biggest downsides of going on holiday is catching a flight at an ungodly hour of the day. While driving half asleep at 4.00 am, with a nagging doubt you have forgot something may be some holidaymaker’s idea of fun – for most it sounds like a bad way to start your holiday. 
-
-												However, help is at hand in the form of Airport Hotels, where you can spend a relaxed evening – and even afford an extra hour or two in bed before leaving.
-
-												Airport hotels may not enjoy the best of reputations. In many peoples mind they are ranked alongside train station pubs – filled with chain smoking business men in cheap suits. However, while there is certainly a convincing argument to avoid train station pubs (you have to pay to get in the toilet for starters), airport hotels are a long way from their cheap and not-so-cheerful roots. These days the savvy traveller can pick up a great value deal at some excellent hotel accommodation situated close to their airport of departure.
-												</span>
-				        						</div>
-				        					</div>
-				        				</div>
-				        			</div>
-
-				      	<div class="item row">
-				      		<div class="col-md-6">
-				        		<img src="fonts/slide-section1.jpg" alt="Chicago" >
-				        		</div>
-				        				<div class="col-md-4 col-md-offset-1">
-				        					<div class="row">
-				        						<div class="col-md-12 teacher-header">
-				        							<span>Giảng viên<span> Nguyễn Thị Mai Linh</span></span>
-				        						</div>
-				        						<div class="col-md-12 teacher-content">
-				        							<span>Unless you have the dubious pleasure of living right next door to an airport one of the biggest downsides of going on holiday is catching a flight at an ungodly hour of the day. While driving half asleep at 4.00 am, with a nagging doubt you have forgot something may be some holidaymaker’s idea of fun – for most it sounds like a bad way to start your holiday. 
-
-												However, help is at hand in the form of Airport Hotels, where you can spend a relaxed evening – and even afford an extra hour or two in bed before leaving.
-
-												Airport hotels may not enjoy the best of reputations. In many peoples mind they are ranked alongside train station pubs – filled with chain smoking business men in cheap suits. However, while there is certainly a convincing argument to avoid train station pubs (you have to pay to get in the toilet for starters), airport hotels are a long way from their cheap and not-so-cheerful roots. These days the savvy traveller can pick up a great value deal at some excellent hotel accommodation situated close to their airport of departure.
-
-				        						</div>
-
-				        					</div>
-				        				</div>
-				        			</div>
-
-				    
-				      	<div class="item row">
-				      	<div class="col-md-6">
-				        		<img src="images/slide-3.png" alt="New york">
-				        	</div>
-				        				<div class="col-md-4 col-md-offset-1">
-				        					<div class="row">
-				        						<div class="col-md-12 teacher-header">
-				        							<span>Giảng viên<span> Nguyễn Thị Mai Linh</span></span>
-				        						</div>
-				        						<div class="col-md-12 teacher-content">
-				        							<span>Unless you have the dubious pleasure of living right next door to an airport one of the biggest downsides of going on holiday is catching a flight at an ungodly hour of the day. While driving half asleep at 4.00 am, with a nagging doubt you have forgot something may be some holidaymaker’s idea of fun – for most it sounds like a bad way to start your holiday. 
-
-												However, help is at hand in the form of Airport Hotels, where you can spend a relaxed evening – and even afford an extra hour or two in bed before leaving.
-
-												Airport hotels may not enjoy the best of reputations. In many peoples mind they are ranked alongside train station pubs – filled with chain smoking business men in cheap suits. However, while there is certainly a convincing argument to avoid train station pubs (you have to pay to get in the toilet for starters), airport hotels are a long way from their cheap and not-so-cheerful roots. These days the savvy traveller can pick up a great value deal at some excellent hotel accommodation situated close to their airport of departure.
-
-				        						</div>
-
-				        					</div>
-				        				</div>
-				        			</div>
-				        		</div>
-
-				    <!-- Left and right controls -->
-				     <a class="btn-prev button-small" href="#teacher-slider" data-slide="prev" role="button">
-				     		<span class="ti-arrow-left"></span>PREV
-			    		</a>
-			    		<a class="btn-next button-small" href="#teacher-slider" role="button" data-slide="next">
-			     		NEXT<span class="ti-arrow-right" ></span>
-			    		</a>
-				</div>
-				</div>
 			</div>
 		</section>
 	</div>
-
-	<div class="container-fluid">
-		<section id="blog">
-			<div class="row">
-				<div class="col-md-12 blog-menu-place">
-				</div>
-
-				<div class="col-md-5 col-md-offset-1 cmt-top-left">
-					<span><p>Lớp học tiếng Nhật của công ty Haposoft đã giúp mình vững tin hơn nhiều trong giao tiếp tiếng Nhật.<br/>
-					Tại đây, mình đã được học toàn diện 4 kĩ năng Nghe Nói Đọc Viết với phương pháp học thực tế và nhớ lâu. Sau khi kết thúc khoá học, mình vẫn có thể áp dụng các kiến thức và nền tảng để có thể tự học tiếp tại nhà. Lớp tiếng Nhật của Haposoft còn có người Nhật giảng dạy đã giúp mình có cơ hội nói chuyện trực tiếp để tăng phản xạ và sự tự tin trong giao tiếp. Ngoài sách vở ra bạn còn được các anh chị chia sẻ kinh nghiệm về cuộc sống bên Nhật một cách thú vị và đầy thực tế. Mình tặng cho lớp học Tiếng Nhật của Haposoft 5 sao.</p></span>
-					<span class="student-name">Bạn Phí Hồng Nhung</span><br/>
-					<span class="student-grade"> 180/180 điểm N3</span>
-
-					<div class="fill-circle-img">
-						<img src="images/top-left.png" alt="image-top-left">
-					</div>
-				</div>
-
-				<div class="col-md-4 col-md-offset-1 cmt-top-right">
-					<span><p>Lớp học bổ ích, giáo viên dạy dễ hiểu kiến thức thực tế.<br/>
-					Tài liệu học phong phú đa dạng.<br/>
-					Có nhiều cách học mới, rèn luyện nhiều kĩ năng như là viết văn đọc văn, phát âm.<br/>
-					Học phí rẻ vừa phải, hợp túi tiền học sinh sinh viên</p>
-					</span>
-					<span class="student-name">Bạn Phí Hồng Nhung</span><br/>
-						<span class="student-grade"> 180/180 điểm N3</span>
-					<div class="fill-circle-img">
-						<img src="images/top-right.jpg" alt="top-right">
-					</div>
-				</div> 
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 col-md-offset-2 cmt-bot-left">
-					<span><p>Lớp học bổ ích, giáo viên dạy dễ hiểu kiến thức thực tế.<br/>
-					Tài liệu học phong phú đa dạng.<br/>
-					Có nhiều cách học mới, rèn luyện nhiều kĩ năng như là viết văn đọc văn, phát âm.<br/>
-					Học phí rẻ vừa phải, hợp túi tiền học sinh sinh viên</p>
-					</span>
-					<span class="student-name">Bạn Phí Hồng Nhung</span><br/>
-						<span class="student-grade"> 180/180 điểm N3</span>
-					<div class="fill-circle-img">
-						<img src="images/bot-left.jpg" alt="bot-left">
-					</div>
-				</div>	
-
-				<div class="col-md-4 col-md-offset-1 cmt-bot-right">
-					<span><p>Lớp học bổ ích, giáo viên dạy dễ hiểu kiến thức thực tế.<br/>
-					Tài liệu học phong phú đa dạng.<br/>
-					Có nhiều cách học mới, rèn luyện nhiều kĩ năng như là viết văn đọc văn, phát âm.<br/>
-					Học phí rẻ vừa phải, hợp túi tiền học sinh sinh viên</p>
-					</span>
-					<span class="student-name">Bạn Phí Hồng Nhung</span><br/>
-						<span class="student-grade"> 180/180 điểm N3</span>
-					<div class="fill-circle-img">
-						<img src="images/bot-right.jpg" alt="bot-right">
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+<<<<<<< HEAD
 
 	<div class="container-fluid">
 		<section id="contact">

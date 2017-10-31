@@ -44,12 +44,16 @@ $color-black: #000000;
 	button#btn-login {
 			background: $color-transparent;
 			border: $color-transparent;
-			color: $color-blue;
+			span	{
+				color: $color-blue;
+			}
 		}
 	button#btn-register {
 			background: $color-blue;
 			border: $color-blue;
-			color: $color-white;
+			span	{
+				color: $color-white;
+			}
 		}
 }
 
@@ -66,7 +70,6 @@ $color-black: #000000;
 		padding:0;
 	}
 	.left {
-		padding:0;
 		padding-top: 6%;
 		.logo-content {
 			padding-top: 70px;
@@ -91,26 +94,36 @@ $color-black: #000000;
 			button#btn-intro-next	{
 				background: $color-transparent;
 				border: 2px solid $color-violet;
-				color: $color-violet;
+				span	{
+					color: $color-violet;
+				}
 			}
 			button#btn-intro-register {
 				background: $color-pink;
 				margin-left: 20px;
 				border: none;
-				color: $color-white;
+				span	{
+					color: $color-white;
+				}
 			}
 		}
 	}
 	.right	{
-		padding:0;
 		.slide-hapo {
+			height: 100vh;
+			/* background-image: url('../fonts/slide-section1.jpg');
+			background-size: cover;
+			background-repeat: no-repeat; */
 			position: relative;
-			.carousel-inner > .item {
-				overflow: hidden;
-				img {
-					width: 100%;
-					height: 100vh;
-				}
+			.carousel-inner > .item.next,
+ 			.carousel-inner > .item.active.right {
+			left: 0;
+			transform: none;
+			}
+			.carousel-inner > .item.prev,
+			.carousel-inner > .item.active.left {
+			left: 0;
+		 	transform: none;
 			}
 			.btn-prev {
 				position: absolute;
@@ -134,7 +147,9 @@ $color-black: #000000;
 				top: 50%;
 				background: $color-pink;
 				@include translate(0,-50%);
-				color: $color-white;
+				span	{
+					color: $color-white;
+				}	
 			}
 			.carousel-indicators
 			{
@@ -171,7 +186,9 @@ $color-black: #000000;
 		bottom: 65px;
 		right: 14px;
 		letter-spacing: 0.2px;
-		color: white;
+		span {
+			color: white;
+		}
 	}
 }
 
@@ -226,10 +243,9 @@ $color-black: #000000;
 			}
 			.n5,.n4,.n3 {
 				border: none;
-				color: $color-white;
 			}
 			.n5>span, .n4>span, .n3>span {
-					
+					color: $color-white;
 					&.ti-angle-double-right {
 						margin-left: -8px;
 						}
@@ -266,8 +282,9 @@ $color-black: #000000;
 		button {
 			background: $color-blue;
 			border: none;
-			color: $color-white;
-			.ti-angle-double-right {margin-left: -8px;}
+			span {
+				color: $color-white;
+			}
 		}
 	}
 	.bookself-right {
@@ -329,7 +346,6 @@ $color-black: #000000;
 			}
 		}
 }
-
 #teacher
 {
 	.carousel {
